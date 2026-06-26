@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Nep News</title>
     <link rel="stylesheet" href="style.css" />
+
     <link
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=keyboard_arrow_down"
@@ -12,44 +13,412 @@
   </head>
   <body>
     <div class="container">
-      <div class="header">
+      <header class="header">
         <div class="logo">
           <span class="logo-box">Nep</span>
           <span class="logo-text">News</span>
         </div>
-        <nav class="nav">
-          <a href="#" class="nav-items">Home</a>
-          <a href="#" class="nav-items"
-            >Sports
-            <span class="material-symbols-outlined">
-              keyboard_arrow_down
-            </span></a
-          >
-          <a href="#" class="nav-items"
-            >Business<span class="material-symbols-outlined">
-              keyboard_arrow_down
-            </span></a
-          >
-          <a href="#" class="nav-items"
-            >Politics<span class="material-symbols-outlined">
-              keyboard_arrow_down
-            </span></a
-          >
-          <a href="#" class="nav-items"
-            >Tech & Media<span class="material-symbols-outlined">
-              keyboard_arrow_down
-            </span></a
-          >
-          <a href="#" class="nav-items"
-            >More<span class="material-symbols-outlined">
-              keyboard_arrow_down
-            </span></a>
 
+        <nav class="nav" id="desktopNav">
+          <a href="#" class="nav-items">Home</a>
+          <a href="#" class="nav-items">
+            Sports
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+          </a>
+          <a href="#" class="nav-items">
+            Business
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+          </a>
+          <a href="#" class="nav-items">
+            Politics
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+          </a>
+          <a href="#" class="nav-items">
+            Tech &amp; Media
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+          </a>
+          <a href="#" class="nav-items">
+            More
+            <span class="material-symbols-outlined">keyboard_arrow_down</span>
+          </a>
         </nav>
 
-        <button class="btn-contact">Contact Us</button>
+        <button class="btn-contact desktop-only">Contact Us</button>
 
+        <button
+          class="hamburger"
+          id="hamburger"
+          aria-label="Toggle navigation menu"
+          aria-expanded="false"
+          aria-controls="mobileMenu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </header>
+
+      <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+        <a href="#" class="nav-items">Home</a>
+        <a href="#" class="nav-items">
+          Sports
+          <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </a>
+        <a href="#" class="nav-items">
+          Business
+          <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </a>
+        <a href="#" class="nav-items">
+          Politics
+          <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </a>
+        <a href="#" class="nav-items">
+          Tech &amp; Media
+          <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </a>
+        <a href="#" class="nav-items">
+          More
+          <span class="material-symbols-outlined">keyboard_arrow_down</span>
+        </a>
+        <button class="btn-contact">Contact Us</button>
+      </div>
+
+      <div class="spacer"></div>
+
+      <!-- Featured Section -->
+      <section class="featured-section">
+        <div class="featured-post">
+          <img
+            src="https://newbusinessage.prixacdn.net/uploads/2026/06/ANFA_FIFA.jpg"
+            alt="Soccer Stadium and Football"
+            class="featured-img"
+          />
+          <div class="featured-overlay">
+            <span class="badge-featured">Featured Post</span>
+            <h2 class="featured-title">
+              FIFA suspends All Nepal Football Association until further notice
+            </h2>
+            <p class="featured-desc">
+              FIFA's Council Bureau has suspended ANFA over breaches of the FIFA
+              Statutes, stripping the federation of its membership rights.
+              Nepal's national team and affiliated clubs are now barred from
+              international competition until the suspension is lifted.
+            </p>
+          </div>
+        </div>
+
+        <div class="sidebar">
+          <div class="side-card">
+            <img
+              src="https://images.unsplash.com/photo-1540910419892-4a36d2c3266c?q=80&w=200&auto=format&fit=crop"
+              alt="Political Voting and Election"
+              class="side-img"
+            />
+            <div class="side-content">
+              <div class="side-meta">
+                <span>26 Jun, 2026</span>
+                <span>3 min Read</span>
+              </div>
+              <div class="side-title">
+                Swarnim Wagle wins highest votes in RSP central committee
+                election
+              </div>
+            </div>
+          </div>
+          <div class="side-card">
+            <img
+              src="https://images.unsplash.com/photo-1610375461246-83df859d849d?q=80&w=200&auto=format&fit=crop"
+              alt="Gold Bars"
+              class="side-img"
+            />
+            <div class="side-content">
+              <div class="side-meta">
+                <span>25 Jun, 2026</span>
+                <span>2 min Read</span>
+              </div>
+              <div class="side-title">
+                Gold price in Nepal drops Rs 5,200 per tola in a single day
+              </div>
+            </div>
+          </div>
+          <div class="side-card">
+            <img
+              src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?q=80&w=200&auto=format&fit=crop"
+              alt="Highway Road Construction"
+              class="side-img"
+            />
+            <div class="side-content">
+              <div class="side-meta">
+                <span>24 Jun, 2026</span>
+                <span>4 min Read</span>
+              </div>
+              <div class="side-title">
+                BP Highway reconstruction reaches 30% progress ahead of monsoon
+              </div>
+            </div>
+          </div>
+          <div class="side-card">
+            <img
+              src="https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?q=80&w=200&auto=format&fit=crop"
+              alt="Stock Market Chart Downward"
+              class="side-img"
+            />
+            <div class="side-content">
+              <div class="side-meta">
+                <span>23 Jun, 2026</span>
+                <span>3 min Read</span>
+              </div>
+              <div class="side-title">
+                NEPSE falls 26 points as Kathmandu market extends its slide
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-header">
+        <h2 class="section-title">Weekly Top News</h2>
+        <p class="section-desc">
+          Stay updated with our Weekly Top News, bringing you the latest trends,
+          insights, and developments from around the world.
+        </p>
+      </div>
+
+      <div class="news-grid">
+        <div class="news-card">
+          <div class="news-img-container">
+            <img
+              src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?q=80&w=600&auto=format&fit=crop"
+              alt="Gavel and Law Court"
+              class="news-img"
+            />
+          </div>
+          <div class="news-body">
+            <div class="news-meta">
+              <span>22 Jun, 2026</span>
+              <span>5 min Read</span>
+            </div>
+            <div class="news-title">
+              CIAA files corruption case over Rs 10 billion e-passport
+              procurement
+            </div>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="news-img-container">
+            <img
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKidglqnp26IOHYw9ISnDz-Rj4nlh82dlCy-kUYcw5O5sG1ogREYyXVl3s&s=10"
+              alt="Birds or Zoo Animals"
+              class="news-img"
+            />
+          </div>
+          <div class="news-body">
+            <div class="news-meta">
+              <span>20 Jun, 2026</span>
+              <span>3 min Read</span>
+            </div>
+            <div class="news-title">
+              Central Zoo in Jawalakhel shut indefinitely after bird flu
+              outbreak
+            </div>
+          </div>
+        </div>
+
+        <div class="news-card">
+          <div class="news-img-container">
+            <img
+              src="https://images.unsplash.com/photo-1434030216411-0b793f4b4173?q=80&w=600&auto=format&fit=crop"
+              alt="Exam Papers and Education"
+              class="news-img"
+            />
+          </div>
+          <div class="news-body">
+            <div class="news-meta">
+              <span>19 Jun, 2026</span>
+              <span>4 min Read</span>
+            </div>
+            <div class="news-title">
+              Class 12 results published with 64.31 percent pass rate nationwide
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- More Sports News -->
+      <section class="sports-section">
+        <div class="section-header">
+          <h2 class="section-title">Top Sports News</h2>
+          <p class="section-desc">
+            Catch up on the latest scores, results, and achievements from Nepali
+            athletes at home and abroad.
+          </p>
+        </div>
+
+        <div class="featured-section">
+          <div class="featured-post">
+            <img
+              src="https://www.aljazeera.com/wp-content/uploads/2026/06/reuters_6a3ac61b-1782236699.jpg?resize=1200%2C800&quality=80"
+              alt="Cristiano Ronaldo celebrating Portugal victory at the 2026 World Cup"
+              class="featured-img"
+            />
+            <div class="featured-overlay">
+              <span class="badge-featured">World Cup 2026</span>
+              <h2 class="featured-title">
+                Ronaldo shines as Portugal thrashes Uzbekistan 5-0 to take
+                control of Group K
+              </h2>
+              <p class="featured-desc">
+                Cristiano Ronaldo scored a brilliant first-half brace as
+                Portugal bounced back from their opening draw to dismantle
+                Uzbekistan in Houston. Roberto Martínez's men now turn their
+                sights toward a massive group-deciding clash against Colombia.
+              </p>
+            </div>
+          </div>
+
+          <div class="sidebar">
+            <div class="side-card">
+              <img
+                src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=200&auto=format&fit=crop"
+                alt="Cricket match in progress"
+                class="side-img"
+              />
+              <div class="side-content">
+                <div class="side-meta">
+                  <span>26 Jun, 2026</span>
+                  <span>2 min Read</span>
+                </div>
+                <div class="side-title">
+                  Nepal defeats UAE by 6 wickets in ICC World Cup League 2
+                  opener
+                </div>
+              </div>
+            </div>
+            <div class="side-card">
+              <img
+                src="https://images.unsplash.com/photo-1551698618-1dfe5d97d256?q=80&w=200&auto=format&fit=crop"
+                alt="Volleyball tournament action"
+                class="side-img"
+              />
+              <div class="side-content">
+                <div class="side-meta">
+                  <span>25 Jun, 2026</span>
+                  <span>3 min Read</span>
+                </div>
+                <div class="side-title">
+                  Nepal women's volleyball team clinches gold at Asian Central
+                  Zone Championship
+                </div>
+              </div>
+            </div>
+            <div class="side-card">
+              <img
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSZ9Mi9uKQp3GEkt7d2xky_tVumnDboTzwNE-eOHTG3XA&s=10"
+                alt="Marathon runners on trail"
+                class="side-img"
+              />
+              <div class="side-content">
+                <div class="side-meta">
+                  <span>24 Jun, 2026</span>
+                  <span>4 min Read</span>
+                </div>
+                <div class="side-title">
+                  Everest Marathon 2026 draws record international participants
+                </div>
+              </div>
+            </div>
+            <div class="side-card">
+              <img
+                src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=200&auto=format&fit=crop"
+                alt="Football stadium crowd"
+                class="side-img"
+              />
+              <div class="side-content">
+                <div class="side-meta">
+                  <span>23 Jun, 2026</span>
+                  <span>2 min Read</span>
+                </div>
+                <div class="side-title">
+                  SAFF Championship 2026: Nepal drawn in Group A with India and
+                  Bangladesh
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="section-header">
+        <h2 class="section-title">Weekly Sports News</h2>
+        <p class="section-desc">
+          Stay updated with our Weekly Sports News, bringing you the latest
+          trends, insights, and developments from around the world of sports.
+        </p>
+      </div>
+
+      <div class="news-grid">
+  <div class="news-card">
+    <div class="news-img-container">
+      <img
+        src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?q=80&w=600&auto=format&fit=crop"
+        alt="World Cup football stadium crowd"
+        class="news-img"
+      />
+    </div>
+    <div class="news-body">
+      <div class="news-meta">
+        <span>25 Jun, 2026</span>
+        <span>3 min Read</span>
+      </div>
+      <div class="news-title">
+        Brazil and Argentina set for blockbuster semi-final clash at FIFA World
+        Cup 2026
       </div>
     </div>
+  </div>
+
+  <div class="news-card">
+    <div class="news-img-container">
+      <img
+        src="https://images.unsplash.com/photo-1624526267942-ab0ff8a3e972?q=80&w=600&auto=format&fit=crop"
+        alt="Tennis player serving"
+        class="news-img"
+      />
+    </div>
+    <div class="news-body">
+      <div class="news-meta">
+        <span>24 Jun, 2026</span>
+        <span>4 min Read</span>
+      </div>
+      <div class="news-title">
+        Carlos Alcaraz defeats Jannik Sinner in five-set thriller to claim
+        Wimbledon title
+      </div>
+    </div>
+  </div>
+
+  <div class="news-card">
+    <div class="news-img-container">
+      <img
+        src="https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?q=80&w=600&auto=format&fit=crop"
+        alt="Cricket stadium under lights"
+        class="news-img"
+      />
+    </div>
+    <div class="news-body">
+      <div class="news-meta">
+        <span>23 Jun, 2026</span>
+        <span>2 min Read</span>
+      </div>
+      <div class="news-title">
+        Australia reclaims World Test Championship title with dominant win over
+        England
+      </div>
+    </div>
+  </div>
+</div>
+    </div>
+    <script src="script.js"></script>
   </body>
 </html>
