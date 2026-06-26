@@ -339,7 +339,7 @@ body {
 }
 
 /* section Top News */
-.sports-section
+
 .section-header {
     padding: 48px 32px 8px;
     display: flex;
@@ -354,6 +354,7 @@ body {
     font-weight: 700;
     color: #111827;
     margin-bottom: 8px;
+    
 }
 
 .section-desc {
